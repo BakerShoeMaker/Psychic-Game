@@ -1,0 +1,20 @@
+body{
+
+    background-color: #58cd41;
+    /*background-image: url("assets/images/spacebackground.jpg");*/
+}
+
+.gameTime{
+
+    font-family: 'Frijole', cursive;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+.gameText{
+
+    font-size: 30px;
+    font-family: 'Baloo Bhaijaan', cursive;
+    color: white;
+
+}
