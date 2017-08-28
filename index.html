@@ -2,9 +2,10 @@
 <html>
     <!--HEAD-->
     <head>
-    <link rel="script" href="assets/javascript/game.js">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+        <!--<link type="text/javascript" src="assets/javascript/game.js">-->
+
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -18,14 +19,33 @@
             <div class="row">
                 <!--top image-->
                 <div class="col-12">
-                    <p class="gameTime p-4">Psychic Game</p>
+                    <p class="titleText p-4">Psychic Game</p>
                 </div>
             </div>
 
             <div id="gameInfo" class= "row">
                 <!--game information -->
                 <div class ="col-12 ">
-                    <p class="gameText">Hello World </p>
+
+                    <!-- ************************* START *********************************** -->
+
+                    <div id="preGameText" class="preGameText text-center"> <span
+                            class="glyphicon glyphicon-arrow-right"> </span>  Press any key to get
+                        started!</div>
+
+                    <div id="wordWithSpaces" class="gameText text-center "> Word with spaces:</div>
+                    <div id="numberOfGuess" class="gameText text-center "> Number of Guesses: </div>
+                    <div id = "lettersAlreadyGuessed" class="gameText text-center"> Letters already guessed: </div>
+
+                    <!-- ************************* END *********************************** -->
+
+
+                    <script type="text/javascript">
+
+                    console.log("Hello from inside the div tag!!!!");
+
+                    </script>
+
                 </div>
             </div>
 
