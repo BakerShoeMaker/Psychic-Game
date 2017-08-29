@@ -1,4 +1,4 @@
-console.log("The game is working!");
+//console.log("hello world!");
 
 //Establish variables.
 var guessesRemaining = 0;
@@ -10,11 +10,15 @@ var  easyWordBank = ["cat", "dog", "frog", "cow", "pig"];
 
 
 //Create event listener for any key that is pressed.
-
 document.onkeyup = function(event){
-    //Determines which key is pressed
-    var keyPressed = event.key;
+    var keyPressed = event.key; //Determines which key is pressed
+    startGame(); //Start the game startGame();
     console.log(keyPressed);
+}
+
+function startGame(){
+    alert("You tapped the keyboad!");
+    document.getElementById("preGameText").innerHTML = "<p>Hello paragraph just changed!</p>"
 }
 
 //Output - Create question

@@ -2,12 +2,14 @@
 <html>
     <!--HEAD-->
     <head>
-        <!--<link type="text/javascript" src="assets/javascript/game.js">-->
+
 
         <link rel="stylesheet" href="assets/css/reset.css">
-        <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/styles.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="assets/css/styles.css">
 
     </head>
 
@@ -19,42 +21,42 @@
             <div class="row">
                 <!--top image-->
                 <div class="col-12">
-                    <p class="titleText p-4">Psychic Game</p>
+                    <p class="titleText pt-5">Psychic Game</p>
                 </div>
             </div>
 
             <div id="gameInfo" class= "row">
-                <!--game information -->
-                <div class ="col-12 ">
+                    <!--game information -->
+                    <div class = "col-3"></div>
 
-                    <!-- ************************* START *********************************** -->
+                    <div class ="col-6">
 
-                    <div id="preGameText" class="preGameText text-center"> <span
-                            class="glyphicon glyphicon-arrow-right"> </span>  Press any key to get
-                        started!</div>
+                    <!-- ************************* START ************************************************************* -->
+                    <!-- ********************************************************************************************* -->
 
-                    <div id="wordWithSpaces" class="gameText text-center "> Word with spaces:</div>
-                    <div id="numberOfGuess" class="gameText text-center "> Number of Guesses: </div>
-                    <div id = "lettersAlreadyGuessed" class="gameText text-center"> Letters already guessed: </div>
+                            <div id="preGameText" class="preGameText text-center pb-5"> Press any key to get started!</div>
 
-                    <!-- ************************* END *********************************** -->
+                            <div id="wordWithSpaces" class="gameText text-left"> Put word with spaces (___, ____, ___):</div>
+                            <div id="numberOfGuess" class="gameText text-left "> Number of Guesses: </div>
+                            <div id = "lettersAlreadyGuessed" class="gameText text-left"> Letters already guessed: </div>
+                    </div>
+
+                    <div class = "col-3"></div>
 
 
-                    <script type="text/javascript">
+            </div>
+                <!-- ********************************************************************************************** -->
+                <!-- ************************* END **************************************************************** -->
 
-                    console.log("Hello from inside the div tag!!!!");
-
-                    </script>
-
-                </div>
             </div>
 
         </div>
 
-        <!--BOOTSTRAP JS STUFF -->
-        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <!--BOOTSTRAP and JS STUFF -->
+
+        <script  src="assets/javascript/game.js"></script>
+
+
     </body>
     <!--BODY END -->
 </html>
