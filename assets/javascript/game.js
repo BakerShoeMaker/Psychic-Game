@@ -1,25 +1,40 @@
-//console.log("hello world!");
+//console.log(Guessesworld!");
 
-//Establish variables.
+//VARIABLES: Establish variables.
 var guessesRemaining = 0;
-var alreadyGuessed;
+var letteresGuessed = 0;
 
 
 //Create word to be guessed.
-var  easyWordBank = ["cat", "dog", "frog", "cow", "pig"];
+var easyWordBank = ["cat", "dog", "frog", "cow", "pig"];
+var lettersGueesed = [];
 
-
-//Create event listener for any key that is pressed.
-document.onkeyup = function(event){
+//EVENT LISTENER: Create event listener for any key that is pressed.
+    document.onkeyup = function(event){
     var keyPressed = event.key; //Determines which key is pressed
+    alert(keyPressed);
     startGame(); //Start the game startGame();
-    console.log(keyPressed);
-}
 
-function startGame(){
-    alert("You tapped the keyboad!");
-    document.getElementById("preGameText").innerHTML = "<p>Hello paragraph just changed!</p>"
-}
+    }
+
+//FUNCTIONS
+    function startGame()
+    {
+            guessesRemaining++;
+            fillTextFields();
+    }
+
+    function fillTextFields()
+    {
+        document.getElementById("preGameText").innerHTML = "";
+        document.getElementById("numberOfWins").innerHTML = " Number of wins:";
+        document.getElementById("numberOfGuesses").innerHTML = "Guesses Remaining: ";
+        document.getElementById("lettersAlreadyGuessed").innerHTML = "Letter already guessed:";
+        alert(guessesRemaining);
+        //document.getElementById("numberOfGuesses").innerHTML = "<p> Number of Guesess:" +alreadyGuessed "<p>";
+    }
+
+
 
 //Output - Create question
     //1) <p> The word is _______________ ? </p>
